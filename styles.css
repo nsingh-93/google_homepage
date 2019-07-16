@@ -1,1 +1,9 @@
 /* Styles sheet for index.html */
+
+#search-bar {
+    border-radius: 20px;
+}
+
+#google-search {
+    border-radius: 3px;
+}
