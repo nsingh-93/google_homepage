@@ -35,6 +35,15 @@
     grid-row: 2 / span 1;
     height: 36px;
     width: 128px;
+    color: rgb(100, 100, 100);
+    background-color: rgba(200, 200, 200, .5);
+    border: none;
+}
+
+#google-search:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(200, 200, 200, .5);
+    border: solid 1px rgb(170, 170, 170);
 }
 
 #lucky-button {
@@ -43,4 +52,13 @@
     grid-row: 2 / span 1;
     height: 36px;
     width: 143px;
+    color: rgb(100, 100, 100);
+    background-color: rgba(200, 200, 200, .5);
+    border: none;
+}
+
+#lucky-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(200, 200, 200, .5);
+    border: solid 1px rgb(170, 170, 170);
 }
