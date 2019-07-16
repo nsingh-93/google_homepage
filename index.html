@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="google-icon.png"/>
+        <title>Google</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <form>
-            <input type="text" name="search-bar" id="search-bar">
-            <input type="submit" name="google-search" id="google-search" value="Google Search">
-        </form>
+        <div class="grid-container search-section">
+            <div class="grid-item">
+                <img src="googlelogo.png" name="google-logo" id="google-logo">
+            </div>
+            <div class="grid-item">
+                <form class="grid-container search-form">
+                    <input class="grid-item" type="text" name="search-bar" id="search-bar">
+                    <input class="grid-item" type="submit" name="google-search" id="google-search" value="Google Search">
+                    <input class="grid-item" type="button" name="lucky-button" id="lucky-button" value="I'm Feeling Lucky">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
