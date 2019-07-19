@@ -22,23 +22,30 @@
     grid-column-gap: 15px;
 }
 
-.top-nav-bar > ul > li {
+header {
+    top: 0;
     display: inline;
     font-family: "Arial", sans-serif;
     font-size: 13px;
     padding: 0px 0px 0px 15px;
+    opacity: 0.75;
 }
 
-.footer {
-    grid-template-columns: repeat(3, 10%) 40% repeat(3, 10%);
-}
-
-.footer > ul > li {
-    display: inline;
-    font-family: "Arial", sans-serif;
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
     font-size: 13px;
-    padding: 0px 0px 0px 15px; 
-    grid-column: auto;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 900px;
+    background: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    line-height: 40px;
+    font-family: "Arial", sans-serif;
+    color: #5F6368;
 }
 
 #search-bar {
