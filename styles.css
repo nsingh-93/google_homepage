@@ -22,13 +22,45 @@
     grid-column-gap: 15px;
 }
 
+.top-left {
+    padding: 15px 2px 0 17px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.bot-left {
+    padding: 0 27px 0 0;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.bot-right {
+    padding: 0 28px 0 0;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     top: 0;
-    display: inline;
     font-family: "Arial", sans-serif;
     font-size: 13px;
-    padding: 0px 0px 0px 15px;
-    opacity: 0.75;
+}
+
+main {
+    margin: 0 auto;
 }
 
 footer {
@@ -46,6 +78,10 @@ footer {
     line-height: 40px;
     font-family: "Arial", sans-serif;
     color: #5F6368;
+}
+
+footer > div {
+    padding-left: 30px;
 }
 
 #search-bar {
