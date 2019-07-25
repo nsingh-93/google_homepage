@@ -5,7 +5,7 @@
 }
 
 .grid-item {
-    margin: 5px;
+    margin: 15px 5px;
 }
 
 .search-section {
@@ -23,8 +23,15 @@
 }
 
 .top-left {
-    padding: 15px 2px 0 17px;
+    padding: 15px 2px 0 19px;
     float: left;
+    text-align: center;
+    position: relative;
+}
+
+.top-right {
+    padding: 15px 0 0 17px;
+    float: right;
     text-align: center;
     position: relative;
 }
@@ -128,4 +135,26 @@ footer > div {
     color: rgb(0, 0, 0);
     background-color: rgba(200, 200, 200, .5);
     border: solid 1px rgb(170, 170, 170);
+}
+
+#sign-in {
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 8px 19px 0 20px;
+}
+
+#grid {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    opacity: .55;
 }
