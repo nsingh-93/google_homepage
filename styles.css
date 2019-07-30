@@ -1,9 +1,9 @@
 /* Styles sheet for index.html */
 
 .search-section {
-    width: 50%;
-    text-align: center;	
-    margin: auto;
+    overflow: visible;
+    max-width: none;
+    margin: 0 auto;
 }
 
 .search-form {
@@ -39,6 +39,14 @@
     float: right;
     text-align: center;
     position: relative;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 300px;
 }
 
 a {
@@ -84,18 +92,28 @@ footer > div {
     padding-left: 30px;
 }
 
-#search-bar {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex: 100%;
+#google-logo {
+    text-align: center;
+    display: block;
+    margin: auto;
+    clear: both;
+    padding-top: 165px;
+    padding-bottom: 20px;
 }
 
-.search-bar-container {
-    border-radius: 20px;
-    border: 1px solid rgba(100, 100, 100, .75);
-    height: 32px;
-    width: 482px;
+#search-bar {
+    font: 16px arial,sans-serif;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.699);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    width: 100%;
+    line-height: 34px;
 }
 
 #microphone {
@@ -106,35 +124,22 @@ footer > div {
     padding: 0 10px;
 }
 
-#google-search {
+.search-button {
     border-radius: 3px;
-    height: 36px;
-    width: 128px;
     color: rgb(100, 100, 100);
     background-color: rgba(225, 225, 225, .5);
     border: none;
     font-size: 14px;
     cursor: pointer;
-}
-
-#google-search:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgba(200, 200, 200, .5);
-    border: solid 1px rgb(170, 170, 170);
-}
-
-#lucky-button {
-    border-radius: 3px;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
     height: 36px;
-    width: 143px;
-    color: rgb(100, 100, 100);
-    background-color: rgba(225, 225, 225, .5);
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
+    line-height: 27px;
+    text-align: center;
 }
 
-#lucky-button:hover {
+.search-button:hover {
     color: rgb(0, 0, 0);
     background-color: rgba(200, 200, 200, .5);
     border: solid 1px rgb(170, 170, 170);
