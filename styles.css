@@ -1,5 +1,48 @@
 /* Styles sheet for index.html */
 
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    top: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+}
+
+main {
+    overflow: visible;
+    max-width: none;
+    margin: 0 auto;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 900px;
+    background: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    line-height: 40px;
+    font-family: "Arial", sans-serif;
+    color: #5F6368;
+}
+
+footer > div {
+    padding-left: 30px;
+}
+
 .search-section {
     overflow: visible;
     max-width: none;
@@ -45,83 +88,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 19px 15px;
     margin-bottom: 300px;
 }
 
-a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-    
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-header {
-    top: 0;
-    font-family: "Arial", sans-serif;
-    font-size: 13px;
-}
-
-main {
-    overflow: visible;
-    max-width: none;
-    margin: 0 auto;
-}
-
-footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 13px;
-    height: 40px;
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    min-width: 900px;
-    background: #f0f0f0;
-    border-top: 1px solid #e0e0e0;
-    line-height: 40px;
-    font-family: "Arial", sans-serif;
-    color: #5F6368;
-}
-
-footer > div {
-    padding-left: 30px;
-}
-
-#google-logo {
-    text-align: center;
-    display: block;
-    margin: auto;
-    clear: both;
-    padding-top: 165px;
-    padding-bottom: 20px;
-}
-
-#search-bar {
-    font: 16px arial,sans-serif;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: rgba(0, 0, 0, 0.699);
-    word-wrap: break-word;
-    outline: none;
+.search-form-inner {
+    background: #fff;
     display: flex;
-    flex: 100%;
-    width: 100%;
-    line-height: 34px;
+    border: 1px solid #e3e5e7;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: auto;
+    width: 584px;
 }
 
-#microphone {
-    border: none;
-    height: 22px;
-    width: 15px;
-    float: right;
-    padding: 0 10px;
+.search-bar-container {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 20px;
+}
+
+.search-bar-box {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.text-search {
+    flex: 100%;
+}
+
+.microphone {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+    
+.microphone-inner {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 6px;
+    width: 24px;
+    line-height: 44px;
+}
+.microphone-inner-image {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg) 0 0 no-repeat;
+    height: 20px;
+    width: 20px;
+    background-size: 14px;
+    vertical-align: middle;
 }
 
 .search-button {
@@ -131,7 +154,7 @@ footer > div {
     border: none;
     font-size: 14px;
     cursor: pointer;
-    margin: 11px 4px;
+    margin: 11px 6px;
     min-width: 54px;
     padding: 0 16px;
     height: 36px;
@@ -165,4 +188,28 @@ footer > div {
     height: 16px;
     margin: 0 4px;
     opacity: .55;
+}
+
+#search-bar {
+    font: 16px arial,sans-serif;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    width: 100%;
+    line-height: 34px;
+    color: rgba(0,0,0,.87);
+}
+
+#google-logo {
+    text-align: center;
+    display: block;
+    margin: auto;
+    clear: both;
+    padding-top: 151px;
+    padding-bottom: 21px;
 }

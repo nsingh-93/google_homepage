@@ -19,23 +19,32 @@
                 <a class="top-right" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
             </div>
         </header>
-        <main>
+        <main>            
+            <img src="googlelogo.png" alt="Google logo" name="google-logo" id="google-logo">
             <div class="search-section">
-                <img src="googlelogo.png" alt="Google logo" name="google-logo" id="google-logo">
                 <form>
                     <div class="search-form">
-                        <div>
-                            <div>
-                                <input type="text" name="search-bar" id="search-bar" title="Search">
-                                <img id="microphone" src="google-mic.png" title="Search by voice">
-                            </div>                            
+                        <div class="search-form-inner">
+                            <div class="search-bar-container">
+                                <div class="search-bar-box">
+                                    <div class="text-search">
+                                        <input type="text" name="search-bar" id="search-bar" title="Search">
+                                    </div>
+                                </div>
+                                <div class="microphone">
+                                    <div class="microphone-inner">
+                                        <div class="microphone-inner-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
-                <div class="search-buttons">
-                    <input type="submit" class="search-button" name="google-search" id="google-search" value="Google Search">
-                    <input type="button" class="search-button" name="lucky-button" id="lucky-button" value="I'm Feeling Lucky">
-                </div>
+            </div>
+            <div class="search-buttons">
+                <input type="submit" class="search-button" name="google-search" id="google-search" value="Google Search">
+                <input type="button" class="search-button" name="lucky-button" id="lucky-button" value="I'm Feeling Lucky">
             </div>
         </main>
         <footer>
